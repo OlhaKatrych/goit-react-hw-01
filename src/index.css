@@ -1,5 +1,8 @@
 /*BASE STYLES*/
+:root {
 
+  --accent: #A9A9A9;
+}
 body {
   font-family: sans-serif;
   line-height: 1.5;
@@ -19,6 +22,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 img {
