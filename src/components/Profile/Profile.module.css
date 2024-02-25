@@ -1,17 +1,19 @@
 .cardSection {
-
-    padding: 15px;
-    padding-bottom: 30px;
+    width: 580px;
+    margin: 0 auto;
     
     
     border: 5px solid black;
     border-radius: 25px;
+
+    overflow: hidden;
 }
 
 .cardWrapper {
 
     max-width: 580px;
-    padding-top: 20px; 
+    padding: 20px 15px 15px;
+     
     
 }
 
@@ -42,5 +44,44 @@
     text-align: center;
     margin-bottom: 20px;
 
+}
+
+.cardList {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #C0C0C0;
+
+    border-top: 5px solid var(--accent);
+}
+
+.cardItem {
+    width: 100%;  
+    display: block;
+    padding: 15px 15px;
+}
+
+.cardItem:not(:last-child) {
+
+    border-right: 5px solid var(--accent);
+}
+
+
+
+.itemsText {
+
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.itemsData {
+
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+   
 }
 

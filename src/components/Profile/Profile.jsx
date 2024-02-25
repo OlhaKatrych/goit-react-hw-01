@@ -13,18 +13,18 @@ function Profile({name, tag, location, image, stats}) {
     <p className={css.cardText}>{location}</p>
   </div>
 
-  <ul>
-    <li>
-      <span>Followers</span>
-      <span>{stats.followers}</span>
+  <ul className={css.cardList}>
+    <li className={css.cardItem}>
+      <span className={css.itemsText}>Followers</span>
+      <span className={css.itemsData}>{stats.followers}</span>
     </li>
-    <li>
-      <span>Views</span>
-      <span>{stats.views}</span>
+    <li className={css.cardItem}>
+      <span className={css.itemsText}>Views</span>
+      <span className={css.itemsData}>{stats.views}</span>
     </li>
-    <li>
-      <span>Likes</span>
-      <span>{stats.likes}</span>
+    <li className={css.cardItem}>
+      <span className={css.itemsText}>Likes</span>
+      <span className={css.itemsData}>{stats.likes}</span>
     </li>
   </ul>
 </div>
