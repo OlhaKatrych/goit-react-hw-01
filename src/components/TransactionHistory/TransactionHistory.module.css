@@ -6,20 +6,57 @@
 
 .tableFlex {
 
+    display: block;
     
 }
 
-.tTable {
+.headTable {
+    display: block;
     background-color: black;
     color: white;
 }
 
 .trTable {
 
-    
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.th {
+
+   width: 100%;
 }
 
 .bodyTable {
 
-    
+    display: block;
+    background-color: lightgrey;
+    color: black;
+}
+
+.trWrapper {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trColor:nth-child(2n+1) {
+
+    background-color: #C0C0C0;
+}
+
+.td {
+
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-top: 2px solid black;
+
+}
+
+.td:not(:last-child) {
+
+    border-right: 2px solid black;
 }
