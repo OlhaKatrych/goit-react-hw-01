@@ -1,7 +1,6 @@
 import css from "./TransactionHistory.module.css";
 import clsx from "clsx";
 function TransactionHistory({ items }) {
-  const toggleBackgroundColor = true;
   return (
     <div className={css.tableContainer}>
       <table className={css.tableFlex}>
@@ -14,9 +13,7 @@ function TransactionHistory({ items }) {
         </thead>
         {items.map((item) => {
           return (
-            <tbody key={item.id} className={clsx(css.bodyTable, {
-              [css.trColor]: toggleBackgroundColor,
-            })}>
+            <tbody key={item.id} className={css.bodyTable}>
               <tr className={css.trWrapper}>
                 <td className={css.td}>{item.type}</td>
                 <td className={css.td}>{item.amount}</td>
