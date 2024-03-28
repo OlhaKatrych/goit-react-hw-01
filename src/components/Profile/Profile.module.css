@@ -1,9 +1,9 @@
 .cardSection {
     width: 580px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     
-    border: 5px solid black;
+    border: 2px solid gray;
     border-radius: 25px;
 
     overflow: hidden;
